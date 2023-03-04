@@ -1,0 +1,1 @@
+// Cada elemento del HTML desde JS es objeto que tiene metodos y propiedades y vamos a poder modificar, agregar y eliminar de nuestro DOM.

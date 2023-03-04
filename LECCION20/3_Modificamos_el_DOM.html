@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo DOM con JS</title>
+  </head>
+  <body>
+    <h1 id="cabecero">Ejemplo DOM con JS</h1>
+    <p id="parrafo">Saludos!</p>
+    <script>
+        console.log("saludos terricola");
+        // Modifico el DOM.
+        
+        //USO de templatte
+        let cabecero=document.getElementById('cabecero');
+        console.log(`valor cabecero: ${cabecero.innerHTML}`);
+        let saludo=document.getElementById('parrafo');
+        console.log(`valor saludo: ${saludo.innerHTML}`);  
+        //Modificacion de los valores utilizando la propiedad innerHTML, que no solamente nos sirve para lectura.
+        saludo.innerHTML="Este es un nuevo Saludo!!!"
+        cabecero.innerHTML="Cambio de Cabecero!!"
+        console.log(`valor cabecero: ${cabecero.innerHTML}`);
+        console.log(`valor saludo: ${saludo.innerHTML}`);
+    </script>
+  </body>
+</html>
