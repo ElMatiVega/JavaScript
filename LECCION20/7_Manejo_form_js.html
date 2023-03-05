@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Formulario con JS.</title>
+  </head>
+  <body>
+    <form id="formulario">
+      Nombre: <input type="text" name="nombre" value="Juan" />
+      <br />
+      Apellido:
+      <input type="text" name="apellido" value="Perez" />
+      <br />
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button>
+    <div id="valores"></div>
+    <script>
+        function mostrarValores(){
+            let forms= document.forms['formulario'];//id de la etiqueta form.
+            let text='';
+            for(let elem of forms){
+                text += elem.value + `<br/>`;
+            }
+            document.getElementById('valores').innerHTML=text;
+        }
+    </script>
+  </body>
+</html>
