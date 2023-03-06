@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM HTML con JS</title>
+</head>
+<body onload="entrar()">
+   
+    <h1 id="titulo">Evento: onLoad</h1>
+    <span>
+        Se ejecuta cuando se carga nuestra pagina web, tambien se     utiliza para revisar cierta cuestiones como el idioma o el uso de cookies.<br/>
+        Las cookies se almasenan en un archivo como key=value. 
+        <br/>
+    </span>
+    
+  
+    <div id="contenido">
+        
+    
+    </div>
+    <br/>
+    <script>
+          function entrar(){
+            alert('Entrando a la pagina Web');
+            let texto='';
+            if(navigator.cookieEnabled){
+                texto='Cookies están habilitadas.'
+            }else{
+                texto='Cookies estan inhabilitadas';
+            }
+            document.getElementById('contenido').innerHTML=texto;
+          }      
+    </script>
+</body>
+</html>
