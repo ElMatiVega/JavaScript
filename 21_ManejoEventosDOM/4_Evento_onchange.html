@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM HTML con JS</title>
+</head>
+<body>
+   
+    <h1 id="titulo">Evento: onchange</h1>
+    <span>
+        Lo vamos a queres capturar cuando modificamos los valores de un campo de texto o los valores de un formulario.<br/>
+    </span>
+    <br/>
+    Name: <input type="text" id="nombre" onchange="convert()"/>
+    Nombre: <input type="text" onchange="convertir(this)"/>
+    <script>
+        function convert(){
+            let nombre=document.getElementById('nombre');
+            console.log('name: '+ nombre.value);
+            nombre.value=nombre.value.toUpperCase();
+        }
+        function convertir(params) {
+            console.log('nombre: '+ params.value);
+            params.value=params.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>
