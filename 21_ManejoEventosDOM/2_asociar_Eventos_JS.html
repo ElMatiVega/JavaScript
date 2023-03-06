@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM HTML con JS</title>
+</head>
+<body>
+   
+    <h1 id="titulo">Manejo de Eventos</h1>
+    
+    <br/>
+    <div id="contenido">
+        
+    
+    </div>
+    <script>
+        //Al evento onclick le pasamos la referencia de una fn(callback)
+       document.getElementById('titulo').onclick = cambiarTexto; 
+       
+       function cambiarTexto(){
+        document.getElementById('titulo').innerHTML='Nuevo título';
+        document.getElementById('contenido').innerHTML='<p id="parrafo">Clickeame<p>';     
+        document.getElementById('parrafo').onclick=cambiaParrafo;
+        function cambiaParrafo(){
+        document.getElementById('parrafo').innerHTML='Gracias';
+       }
+      
+       }
+       
+    </script>
+</body>
+</html>
