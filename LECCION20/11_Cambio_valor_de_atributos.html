@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo del DOM con JS.</title>
+  </head>
+  <body>
+    <!-- El document.write() puede sobreescribir todo el documento por eso tenemos que hacer mucho cuidado. -->
+    <h1 id="titulo">Cambios de atributos img HTML</h1>
+    <button onclick="cambioImagen()">Cambio Imagen</button>
+    <br/>
+    <img id="imagencita"  src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="imagen"/>
+    <script>      
+        function cambioImagen(){
+            document.getElementById('imagencita').src='http://globalmentoring.com.mx/imagenes/html5.png';
+        }
+    </script>
+  </body>
+</html>

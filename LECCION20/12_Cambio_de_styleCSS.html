@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo del DOM con JS.</title>
+  </head>
+  <body>
+    <!-- El document.write() puede sobreescribir todo el documento por eso tenemos que hacer mucho cuidado. -->
+    <h1 id="titulo">Cambios de estilo CSS</h1>
+    <button onclick="cambioDeEstilo()">Cambio de estilo</button>
+    <br/>
+    <script>  
+    //    Es importante la propiedad STYLE
+        function cambioDeEstilo(){
+            document.getElementById('titulo').style.color='red';
+        }
+    </script>
+  </body>
+</html>
