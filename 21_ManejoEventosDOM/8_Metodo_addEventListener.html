@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM HTML con JS</title>
+</head>
+<body>
+   
+    <h1 id="titulo" ">Método addEventListener en JavaScript.</h1>
+    <span>
+        addEventListener:<br/>
+        - Dentro del addEventListener('evento') va el evento sin el on.<br/>
+        - Y le pasamos la referencia de la función.
+    </span>
+    <br/><br/>
+    <span>
+        Ya no vamos a configurar los eventos onfocus y blur desde el HTML sino desde JavaScript. Comparar codigo con el cap.n°7.
+    </span>
+    <br/><br/>
+    Nombre: <input type="text" id="nombre"/>
+    <br/><br/>
+    Apellido: <input type="text" id="apellido"/>
+    <script>
+     document.getElementById('nombre').addEventListener('focus', cambiar);
+     document.getElementById('nombre').addEventListener('blur', regresar);
+
+     document.getElementById('apellido').addEventListener('focus', cambiar);
+     document.getElementById('apellido').addEventListener('blur', regresar);
+
+     function cambiar(evento) {
+        let componente=evento.target;
+        componente.style.background = 'green';       
+     }
+     function regresar(evento) {
+        evento.target.style.background = 'grey';      
+     }
+    </script>
+</body>
+</html>
