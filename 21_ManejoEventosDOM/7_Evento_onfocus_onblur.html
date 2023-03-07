@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM HTML con JS</title>
+</head>
+<body>
+   
+    <h1 id="titulo" ">Eventos onfocus y onblur.</h1>
+    <span>
+        onfocus:Cuando damos click en un campo de input de un form cambia el background del elem type text<br/>
+    </span>
+    <span>
+        onblur:es para regresar a blanco el background que se cambio con el onfocus.
+    </span>
+    <br/><br/>
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    <br/><br/>
+    Apellido: <input type="text" onfocus="cambiar(this)" onblur="regresar(this)"/>
+    <script>
+       function cambiar(elementoInput) {
+        elementoInput.style.background = 'yellow';
+       }
+       function regresar(elementoInput) {
+            elementoInput.style.background = 'white';
+       }
+    </script>
+</body>
+</html>
