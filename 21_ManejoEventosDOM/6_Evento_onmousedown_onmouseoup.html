@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM HTML con JS</title>
+</head>
+<body>
+   
+    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="green(this)" onclick="brown(this)">Evento: onmousedown y onmouseup.</h1>
+    <span>
+        onmousedown:Lo vamos a usar cuando hacemos click sobre un elemento.<br/>
+    </span>
+    <span>
+        onmouseup: Cuando soltamos el click sobre cierto elemento.
+    </span>
+    <br/>
+ 
+    <script>
+        function rojo(titulo){
+            titulo.style.color='red';
+            console.log('evento onmousedown cambio a rojo');
+        }
+        function green(titulo){
+            titulo.style.color='green';
+            console.log('evento onmouseup cambio a verde');
+        }
+        function brown(titulo){
+            titulo.style.color='brown';
+            console.log('evento onclick cambio a marrón');
+        }
+    </script>
+</body>
+</html>
