@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM HTML con JS</title>
+</head>
+<body>
+   
+    <h1 id="titulo" ">Delegación de eventos JS.</h1>
+    <span>
+        Aca si sirve usar una ArrowFuction ya que se va a aplicar los cambios al formulario.<br/>
+        La confirmación en true dentro del addEventListener quiere decir o  permite aplicar los eventos a los elementos internos del form, como en este ejemplo los input.        
+    </span>
+    <br/><br/>
+    <form id="formu">
+        Nombre: <input type="text" id="nombre"/>
+        <br/><br/>
+        Apellido: <input type="text" id="apellido"/>
+    </form>
+  
+    <script>
+        let formu = document.getElementById('formu');
+     
+        formu.addEventListener('focus', (evento)=>{
+            evento.target.style.background = 'tomato'; 
+        }, true);
+        formu.addEventListener('blur', (evento)=>{
+            evento.target.style.background = 'grey'; 
+     }, true);
+    </script>
+</body>
+</html>
