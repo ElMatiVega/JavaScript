@@ -10,22 +10,24 @@
    
     <h1 id="titulo" ">Método addEventListener en JavaScript.</h1>
     <span>
-        addEventListener:<br/>
-        - Dentro del addEventListener('evento') va el evento sin el on.<br/>
-        - Y le pasamos la referencia de la función.
-        - Podemos asociar varios eventos a un componente HTML.
+        ArrowFunction: La macana es que no la podemos reutiliza con varios eventos ya que se ejecuta ahi mismo en el addEventListener<br/>
+        Cuando es una funcion común en el addEventListener se pasar la referencia de la funcion.
+        <br/>
+        
     </span>
     <br/><br/>
-    <span>
-        Ya no vamos a configurar los eventos onfocus y blur desde el HTML sino desde JavaScript. Comparar codigo con el cap.n°7.
-    </span>
+    
     <br/><br/>
     Nombre: <input type="text" id="nombre"/>
     <br/><br/>
     Apellido: <input type="text" id="apellido"/>
     <script>
-     document.getElementById('nombre').addEventListener('focus', cambiar);
-     document.getElementById('nombre').addEventListener('blur', regresar);
+     document.getElementById('nombre').addEventListener('focus', (evento)=>{
+        evento.target.style.background = 'tomato'; 
+     });
+     document.getElementById('nombre').addEventListener('blur', (evento)=>{
+        evento.target.style.background = ''; 
+     });
 
      document.getElementById('apellido').addEventListener('focus', cambiar);
      document.getElementById('apellido').addEventListener('blur', regresar);
