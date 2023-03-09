@@ -1,9 +1,25 @@
-//NO es buena practica
 
+let a, b;
+a = 1, b  =2;
+let c= a + b;
+console.log(c);
+
+// -------------JAVASCRIPT  es sencible a minusculas y mayausculas.
+
+let nombredeperro= "Dina Mita";
+let nombreDePerro= "Alfi";
+console.log(nombredeperro);
+console.log(nombreDePerro);
+
+//NO es buena practica
 nombre="Matías";
 console.log(nombre);
 
+// usa CamelCase es una buena practica
 var segundoNombre= "Lucas";
+// CONSOLE.LOG() console es un objeto y log es un METODO O FUNCION
+console.log(segundoNombre);
+
 
 let apellido="Vega";
 // const NO permite cambiar el valor
