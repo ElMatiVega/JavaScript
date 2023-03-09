@@ -11,6 +11,12 @@ let nombreDePerro= "Alfi";
 console.log(nombredeperro);
 console.log(nombreDePerro);
 
+// Una variable no puede empezar con NUMEROS, o ser PLABRA RESERVADA, a continuacion casos válidos.
+
+let marcas1= ["marca1","marca2","marca3"];
+let _marcas=["marca_A","marca_B"];
+let $monedas=["pesos", "dolares","reales"];
+
 //NO es buena practica
 nombre="Matías";
 console.log(nombre);
