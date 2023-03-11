@@ -56,7 +56,7 @@ info.appendChild(parrafo3);
 //Crear img
 //paso 3
 const imagen= document.createElement('img');
-imagen.src='../img/Sql.png';
+imagen.src='./img/Sql.png';
 imagen.alt='text alter';
 
 //Crear el CARD perse
@@ -75,6 +75,6 @@ cards.appendChild(info);
 
 //INSERTAR EN EL HTML
 //paso 7
-const contenedor= document.querySelector('.hacer .contenedor-Cards');
+const contenedor= document.querySelector('.hacer .contenedor-cards ');
 console.log(contenedor.children);
 contenedor.insertBefore(cards, contenedor.children[0]);
