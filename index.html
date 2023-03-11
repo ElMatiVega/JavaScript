@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML con JS.</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="hero">
-        <header class="header_contenedor">
-            <div class="logo">
-               <span>LOGO</span>
-            </div>
-            <nav class="navegacion">
-                <a href="">Vender</a>
-                <a href="">Ayuda</a>
-                <a href="">Registro</a>
-                <a href="">Iniciar Sesión</a>
-            </nav>
-        </header>
-        <div class="contenido-hero_contenedor">
-            <span>Contiene algo.</span>
+        <div class="hero">
+            <header class="header contenedor">
+                <div class="logo">
+                    <img src="./img/logo.png">
+                </div>
+                <nav class="navegacion">
+                    <a href="#">Vender</a>
+                    <a href="#">Ayuda</a>
+                    <a href="#">Registro</a>
+                    <a href="#">Iniciar Sesión</a>
+                </nav>
+            </header>
+        <!-- <div class="contenido-hero contenedor"> -->
+        <div>
+            <h1 id="formulario">Encuentra <span> hospedaje  </span>para tus próximas vacaciones</h1>
+
+            <form action="/buscador" method="POST" class="formulario formulario-buscar" id="formulario" >
+                <input type="text" name="busqueda" class="busqueda" placeholder="New York, Londres, Roma, Guadalajara">
+                <input type="submit" value="Buscar" id="btn-submit">
+            </form>
+        </div>
         </div>
     </div>
-    <main class="contenido_contenedor">
+    <main class="contenido contenedor">
         <section class="hacer">
             <h2>Que Hacer</h2>
             <div class="contenedor-Cards">
@@ -63,8 +72,57 @@
         </section>
 
     </main>
-    <footer id="footer" class="footer">....</footer>
-    <a href="#footer" class="btnflotante">Idioma y Moneda</a>
+    <footer id="footer" class="footer">
+        <div class="contenedor">
+                <div class="nav-footer">
+                    <h3 class="titulo-footer">MiViaje.com</h3>
+                    <nav class="menu">
+                        <a href="#">Empleo</a>
+                        <a href="#">Prensa</a>
+                        <a href="#">Politicas</a>
+                        <a href="#">Ayuda</a>
+                    </nav>
+                </div>
+
+                <div class="nav-footer">
+                    <h3 class="titulo-footer">Descubre MiViaje.com</h3>
+                    <nav class="menu">
+                        <a href="#">Confianza y Seguridad</a>
+                        <a href="#">Crédito de Viajero</a>
+                        <a href="#">AirBNB Citizen</a>
+                        <a href="#">Viaje de negocios</a>
+                    </nav>
+                </div>
+
+                <div class="nav-footer">
+                    <h3 class="titulo-footer">Hospedaje</h3>
+                    <nav class="menu">
+                        <a href="#">Razones para Hospedar</a>
+                        <a href="#">Hospitalidad</a>
+                        <a href="#">Ser un anfitrión responsable</a>
+                        <a href="#">Centro de la Comunidad</a>
+                    </nav>
+                </div>
+
+                <div class="nav-footer">
+                    <nav class="sociales">
+                        <ul>
+                            <li><a href="http://facebook.com" target="_blank"><span>Facebook</span></a></li>
+                            <li><a href="http://twitter.com" target="_blank"><span>Twitter</span></a></li>
+                            <li><a href="http://instagram.com" target="_blank"><span>Instagram</span></a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <a href="#">Razones para Hospedar</a>
+                        <a href="#">Hospitalidad</a>
+                        <a href="#">Ser un anfitrión responsable</a>
+                        <a href="#">Centro de la Comunidad</a>
+                    </nav>
+                </div>
+        </div>
+    </footer>
+    <a href="#footer" class="btn-flotante">Idioma y Moneda</a>
     <script src="./22_GenerarHtml_conJS/GenerarHTML_conJS.js"></script>
+    <script src="./22_GenerarHtml_conJS/Eventos.js"></script>
 </body>
 </html>
